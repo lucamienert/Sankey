@@ -1,6 +1,7 @@
 // Sidebar.js
 import React from 'react';
 import ThemeSwitcher from './ThemeSwitcher';
+import { Link } from 'react-router-dom';
 
 const Sidebar = ({ children }) => {
   return (
@@ -13,93 +14,15 @@ const Sidebar = ({ children }) => {
             </a>
             <ul className="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
               <li className="nav-item">
-                <a href="#" className="nav-link align-middle px-0">
+                <Link to="/" className="nav-link align-middle px-0">
                   <i className="fs-4 bi-house"></i>
                   <span className="ms-1 d-none d-sm-inline">Home</span>
-                </a>
-              </li>
-              <li>
-                <a href="#submenu1" data-bs-toggle="collapse" className="nav-link px-0 align-middle">
-                  <i className="fs-4 bi-speedometer2"></i>
-                  <span className="ms-1 d-none d-sm-inline">Dashboard</span>
-                </a>
-                <ul className="collapse show nav flex-column ms-1" id="submenu1" data-bs-parent="#menu">
-                  <li className="w-100">
-                    <a href="#" className="nav-link px-0">
-                      <span className="d-none d-sm-inline">Item 1</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" className="nav-link px-0">
-                      <span className="d-none d-sm-inline">Item 2</span>
-                    </a>
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <a href="#" className="nav-link px-0 align-middle">
-                  <i className="fs-4 bi-table"></i>
-                  <span className="ms-1 d-none d-sm-inline">Orders</span>
-                </a>
-              </li>
-              <li>
-                <a href="#submenu2" data-bs-toggle="collapse" className="nav-link px-0 align-middle">
-                  <i className="fs-4 bi-bootstrap"></i>
-                  <span className="ms-1 d-none d-sm-inline">Bootstrap</span>
-                </a>
-                <ul className="collapse nav flex-column ms-1" id="submenu2" data-bs-parent="#menu">
-                  <li className="w-100">
-                    <a href="#" className="nav-link px-0">
-                      <span className="d-none d-sm-inline">Item 1</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" className="nav-link px-0">
-                      <span className="d-none d-sm-inline">Item 2</span>
-                    </a>
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <a href="#submenu3" data-bs-toggle="collapse" className="nav-link px-0 align-middle">
-                  <i className="fs-4 bi-grid"></i>
-                  <span className="ms-1 d-none d-sm-inline">Products</span>
-                </a>
-                <ul className="collapse nav flex-column ms-1" id="submenu3" data-bs-parent="#menu">
-                  <li className="w-100">
-                    <a href="#" className="nav-link px-0">
-                      <span className="d-none d-sm-inline">Product 1</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" className="nav-link px-0">
-                      <span className="d-none d-sm-inline">Product 2</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" className="nav-link px-0">
-                      <span className="d-none d-sm-inline">Product 3</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" className="nav-link px-0">
-                      <span className="d-none d-sm-inline">Product 4</span>
-                    </a>
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <a href="#" className="nav-link px-0 align-middle">
-                  <i className="fs-4 bi-people"></i>
-                  <span className="ms-1 d-none d-sm-inline">Customers</span>
-                </a>
-              </li>
-              <li>
+                </Link>
               </li>
             </ul>
             <hr />
-            <div className="dropdown pb-4">
                 <ThemeSwitcher />
+            <div className="dropdown pb-4">
               <a href="#" className="d-flex align-items-center text-white text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
                 <img src="https://github.com/mdo.png" alt="hugenerd" width="30" height="30" className="rounded-circle" />
                 <span className="d-none d-sm-inline mx-1">loser</span>
